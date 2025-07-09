@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: #f4f4f4;
+}
+select, button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+#icerik {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
