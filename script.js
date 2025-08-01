@@ -1,21 +1,25 @@
-function goster() {
-  const sinif = document.getElementById("sinif").value;
-  const konu = document.getElementById("konu").value;
-  const icerikTuru = document.getElementById("icerikTuru").value;
-  const icerikAlani = document.getElementById("icerik");
+window.addEventListener("DOMContentLoaded", () => {
+  const cat = document.getElementById("cat");
 
-  if (!sinif || !konu || !icerikTuru) {
-    icerikAlani.innerText = "Lütfen tüm seçimleri yap.";
-    return;
-  }
+  // El sallama benzeri animasyon için döndürme (simülasyon)
+  setTimeout(() => {
+    cat.style.transform = "rotate(10deg)";
+  }, 3500);
 
-  if (sinif === "tyt" && konu === "sozcuk" && icerikTuru === "konu") {
-    icerikAlani.innerHTML = `
-      <h2>Sözcükte Anlam - Konu Anlatımı (PDF)</h2>
-      <iframe src="sozlukte-anlam-1.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
-    `;
-    return;
-  }
+  setTimeout(() => {
+    cat.style.transform = "rotate(-10deg)";
+  }, 4000);
 
-  icerikAlani.innerText = `Seçilen: ${sinif.toUpperCase()} > ${konu} > ${icerikTuru} — içerik henüz eklenmedi.`;
-}
+  setTimeout(() => {
+    cat.style.transform = "rotate(0deg)";
+  }, 4500);
+
+  // Göz kırpma için opacity simülasyonu
+  setTimeout(() => {
+    cat.style.filter = "brightness(0.8)";
+  }, 9000);
+
+  setTimeout(() => {
+    cat.style.filter = "brightness(1)";
+  }, 9300);
+});
