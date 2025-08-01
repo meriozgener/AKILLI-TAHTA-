@@ -1,1 +1,1 @@
-# AKILLI-TAHTA-
+# Hatırlatma 
