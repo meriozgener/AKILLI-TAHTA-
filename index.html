@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Akıllı Tahta Uygulaması</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kedi Animasyonu</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Akıllı Tahta Sistemi</h1>
-
-  <label>Sınıf Seviyesi Seç:</label><br>
-  <select id="sinif">
-    <option value="">--Seç--</option>
-    <option value="tyt">TYT</option>
-    <option value="ayt">AYT</option>
-    <option value="9">9. Sınıf</option>
-    <option value="10">10. Sınıf</option>
-    <option value="11">11. Sınıf</option>
-    <option value="12">12. Sınıf</option>
-  </select><br>
-
-  <label>Konu Seç:</label><br>
-  <select id="konu">
-    <option value="">--Seç--</option>
-    <option value="sozcuk">Sözcükte Anlam</option>
-  </select><br>
-
-  <label>İçerik Türü Seç:</label><br>
-  <select id="icerikTuru">
-    <option value="">--Seç--</option>
-    <option value="konu">Konu Anlatımı</option>
-    <option value="test">Konu Testi</option>
-    <option value="cikmis">Çıkmış Sorular</option>
-    <option value="etkinlik">Sınıf İçi Etkinlik</option>
-  </select><br>
-
-  <button onclick="goster()">Göster</button>
-
-  <div id="icerik"></div>
+  <h1 class="header-text">Küçük bir hatırlatma fıstık!</h1>
+  <div class="scene">
+    <img src="images/cat.png" alt="kedi" class="cat" id="cat" />
+  </div>
 
   <script src="script.js"></script>
 </body>
